@@ -9,10 +9,11 @@ public class Threads {
             @Override
             public void run() {
                 System.out.println("Start of the run method execution");
-
+                int i=0;
                 try {
-                    while (true) {
+                    while (i<10) {
                         try {
+                            i++;
                             Thread.sleep(1000);
                         } catch (InterruptedException x) {
                         }
